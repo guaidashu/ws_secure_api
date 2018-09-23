@@ -184,3 +184,4 @@ global.com = com;
 global.unzip = unzip;
 global.runEvel = runEvel;
 global.setTimeout = setTimeout;
+global.getDocId = getDocId;
