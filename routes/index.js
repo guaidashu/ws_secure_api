@@ -17,7 +17,7 @@ router.get('/test', function(req, res, next){
 });
 
 router.post("/getDocId", function(req, res, next){
-	getDocId();
+	getDocId(req, res);
 });
 
 router.get('/getParam', function(req, res, next){

@@ -176,6 +176,7 @@ function getDocId(req, res){
             data.data = data.data + getRunEval(docId[i]) + ",";
         }
     }
+    res.end(JSON.stringify(data));
 
 }
 
