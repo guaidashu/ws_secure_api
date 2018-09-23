@@ -173,5 +173,8 @@
                 }));
         };
     }
+    global.test = "mmm";
     // that's it!
 })(this);
+
+exports.Base64_Zip = this.Base64_Zip;

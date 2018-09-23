@@ -19,3 +19,11 @@ exports.getParam = function(req, res){
 	res.write(test());
 	res.end();
 }
+
+var testFun = {
+	x : function(){
+		return "ok";
+	}
+}
+
+global.testFun = testFun;
