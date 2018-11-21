@@ -4,12 +4,13 @@ var test = require('../app/test');
 require('../app/test');
 require("../app/dist/libs/getKey");
 require("../app/dist/libs/unzip");
+require("../app/controllers/handleFlfg");
 
 
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  runEvel(res);  
+	runEvel(res);  
 });
 
 router.get('/test', function(req, res, next){
@@ -22,6 +23,10 @@ router.post("/getDocId", function(req, res, next){
 
 router.get('/getParam', function(req, res, next){
 	getParam(req, res);
+});
+
+router.post('/handleFlfg', function(req, res, next){
+	handleFlfg(req, res);
 });
 
 module.exports = router;
